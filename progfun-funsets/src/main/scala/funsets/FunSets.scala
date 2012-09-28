@@ -106,7 +106,7 @@ object FunSets {
   /**
    * Returns a set transformed by applying `f` to each element of `s`.
    */
-  def map(s: Set, f: Int => Int): Set = {
+  def map2(s: Set, f: Int => Int): Set = {
        def mapST(num:Int):Boolean={
          if(contains(s,funcInv(num,f))) true
          else false
@@ -125,7 +125,7 @@ object FunSets {
   
   
   
-  def map2(s: Set, f: Int => Int): Set = {
+  def map(s: Set, f: Int => Int): Set = {
        def mapST(num:Int):Set={
          if(num==bound)(i:Int)=>false
          else if(contains(s,num))union(singletonSet(f(num)),mapST(num+1))

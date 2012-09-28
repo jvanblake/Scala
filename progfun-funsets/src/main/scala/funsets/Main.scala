@@ -12,7 +12,7 @@ object Main extends App {
   println(contains(singletonSet(1), 1))
   println(
       printSet(
-    		  map2(
+    		  map(
               union(
                   union(singletonSet(10),singletonSet(7)),union(singletonSet(6),singletonSet(5))),alter)))
 }

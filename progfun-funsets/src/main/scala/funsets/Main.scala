@@ -4,8 +4,7 @@ object Main extends App {
   import FunSets._
   
   def func(num:Int):Boolean = 
-    if(num>9)true
-    else false
+    (num>9)
     
   def alter(num:Int):Int=num*num+30
   

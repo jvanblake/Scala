@@ -22,8 +22,7 @@ object FunSets {
    */
   def singletonSet(elem: Int): Set ={
     def single(num:Int):Boolean=
-      if(num==elem) true
-      else false
+      (num==elem)
     single
   }
   /**
@@ -108,10 +107,9 @@ object FunSets {
    */
   def map2(s: Set, f: Int => Int): Set = {
        def mapST(num:Int):Boolean={
-         if(contains(s,funcInv(num,f))) true
-         else false
+         contains(s,funcInv(num,f))
        }  
-      mapST
+       mapST
   }
   
   def funcInv(num:Int,f:Int=>Int):Int ={

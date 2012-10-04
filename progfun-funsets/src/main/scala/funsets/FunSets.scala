@@ -103,7 +103,7 @@ object FunSets {
   }
   
   def exists(s:Set, p: Int=> Boolean): Boolean = {
-    !forall(s, ((num:Int) => p(num)))
+    !forall(s, ((num:Int) => !p(num)))
   }
 
   /**
